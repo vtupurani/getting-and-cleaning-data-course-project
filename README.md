@@ -1,14 +1,20 @@
 getting-and-cleaning-data-course-project
-• run_analysis.R 
+
+• rhttps://github.com/vtupurani/getting-and-cleaning-data-course-project/edit/master/README.md#un_analysis.R 
         r script to processes data and generate required tidy dataset. 
+
 • CodeBook.md 
         Describes the variables, the data, and other work that performed to clean up the data
+
 • README.md 
 The required data can be obtained from 
 "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+
 Following tidyData set is obtained using the script run_analysis.
+
 dim(tidyData)
 [1] 180  21
+
 head(tidyData)
  activityId subjectId timeBodyAccMagnitudeMean timeBodyAccMagnitudeStdDev
 1          1         1              -0.13697118                 -0.2196886
