@@ -1,4 +1,5 @@
-# To merge the training and the test sets, first read the data  
+# To merge the training and the test sets, first read the data from the unzipped folder UCI HAR dataset
+setwd('C:/Users/Vyjayanthi/Desktop/UCI HAR Dataset/')
  features     = read.table('./features.txt',header=FALSE); #imports features.txt 
  activityType = read.table('./activity_labels.txt',header=FALSE); #imports activity_labels.txt 
  subjectTrain = read.table('./train/subject_train.txt',header=FALSE); #imports subject_train.txt 
@@ -74,5 +75,7 @@
 # Merge tidyData with activityType to include descriptive acitvity names 
  tidyData    = merge(tidyData,activityType,by='activityId',all.x=TRUE)
  
-# tidyData set  
-write.table(tidyData, './tidyData.txt',row.names=TRUE,sep='\t')
+# Final tidyData set  
+write.table(tidyData, "c:/users/Vyjayanthi/desktop/tidyData.txt", row.names= FALSE, sep='\t')
+ 
+  
